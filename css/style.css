@@ -1,0 +1,434 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@keyframes flash {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+a {
+  color: #f2e8c5;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.titulo-navbar {
+  font-size: 32px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Cardo", serif;
+  background: #0d0e26;
+  height: 12vh;
+}
+
+.lista-navbar {
+  list-style: none;
+  display: flex;
+}
+
+.lista-navbar > li {
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-left: 32px;
+}
+
+main {
+  background: #8c394e;
+  height: 76%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-digitacao {
+  width: 85%;
+  max-width: 70%;
+  padding: 2em;
+  border: 4px solid #f2e8c5;
+  border-radius: 4px;
+  margin-top: 60px;
+  margin-bottom: 80px;
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.main-digitacao > p {
+  display: inline;
+  color: #f2e8c5;
+  font-family: "Press Start 2P", cursive;
+  font-size: 14px;
+  line-height: 1.3em;
+}
+
+.dragao {
+  width: 100%;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 94px 15px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 0px 2px 94px 15px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 0px 2px 94px 15px rgba(0, 0, 0, 0.54);
+}
+
+.main-descricao {
+  font-family: "Cardo", serif;
+  color: #f2e8c5;
+  margin-bottom: 60px;
+  align-items: center;
+}
+
+.main-descricao > h1 {
+  margin-left: 30px;
+  margin-bottom: 15px;
+  align-items: center;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.main-descricao > h2 {
+  margin-left: 30px;
+  margin-bottom: 15px;
+  align-items: center;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.main-descricao > p {
+  margin-left: 60px;
+  margin-right: 60px;
+  align-items: center;
+  font-size: 27px;
+  margin-bottom: 50px;
+}
+
+span {
+  display: none;
+  min-width: 1em;
+}
+
+footer > nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Cardo", serif;
+  background: #f2e8c5;
+  height: 12vh;
+}
+.lista-footer {
+  list-style: none;
+  display: flex;
+}
+
+.lista-footer > li {
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-left: 32px;
+}
+
+.lista-footer > li > a {
+  color: #0d0e26;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.lista-footer > li > a:hover {
+  opacity: 0.7;
+}
+
+iframe{
+  margin-left: 29%;
+}
+
+/* TELA LOGIN */
+/* TELA LOGIN */
+/* TELA LOGIN */
+
+.main-form {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 76%;
+}
+
+.card {
+  width: 400px;
+  padding: 60px;
+  background: #f2e8c5;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+
+.card > h2 {
+  font-family: "Cardo", serif;
+  font-size: 45px;
+  margin: 0 0 30px;
+  padding: 0;
+  color: #0d0e26;
+  text-align: center;
+}
+
+.label-float {
+  position: relative;
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  color: #0d0e26;
+}
+
+.label-float input {
+  font-family: "Cardo", serif;
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  font-size: 20px;
+  color: #0d0e26;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #0d0e26;
+  outline: none;
+  background: transparent;
+  transition: all 0.2s ease-out;
+  border-radius: 0;
+}
+
+.card .label-float > label {
+  font-family: "Cardo", serif;
+  font-size: 20px;
+  color: #0d0e26;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all 0.25s ease-out;
+}
+
+.card p {
+  font-family: "Cardo", serif;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 22p;
+}
+
+.link-cadastro {
+  text-align: center;
+  font-family: "Cardo", serif;
+  font-size: 25px;
+  color: #0d0e26;
+}
+
+.label-float input:focus {
+  border-bottom: 2px solid #0d0e26;
+}
+
+.label-float input:focus ~ label {
+  font-size: 16px;
+  margin-top: 0;
+  color: #0d0e26;
+}
+
+.label-float input:not(:placeholder-shown) ~ label {
+  font-size: 16px;
+  margin-top: 0;
+  color: #0d0e26;
+}
+
+.alinhar-botao {
+  text-align: center;
+}
+
+button {
+  font-family: "Cardo", serif;
+  border: none;
+  background: #0d0e26;
+  border-radius: 5px;
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #f2e8c5;
+  font-size: 24px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin: 40px;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  font-family: "Cardo", serif;
+  background: #8c394e;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #8c394e, 0 0 25px #8c394e, 0 0 50px #8c394e,
+    0 0 100px #8c394e;
+}
+
+button span {
+  position: absolute;
+  display: block;
+}
+
+button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 7px;
+  background: linear-gradient(90deg, transparent, #8c394e);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 7px;
+  background: linear-gradient(270deg, transparent, #8c394e);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+/* TELA ITENS */
+/* TELA ITENS */
+/* TELA ITENS */
+
+.tabela th h1 {
+  font-weight: bold;
+  font-size: 1em;
+  text-align: left;
+  color: #0d0e26;
+}
+
+.tabela td {
+  font-weight: normal;
+  font-size: 1em;
+  -webkit-box-shadow: 0 2px 2px -2px #0e1119;
+  -moz-box-shadow: 0 2px 2px -2px #0e1119;
+  box-shadow: 0 2px 2px -2px #0e1119;
+  color: #f2e8c5;
+}
+
+.tabela {
+  font-family: "Cardo", serif;
+  text-align: left;
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 75px;
+  display: table;
+  padding: 0 0 8em 0;
+}
+
+.tabela td,
+.tabela th {
+  padding-bottom: 2%;
+  padding-top: 2%;
+  padding-left: 2%;
+}
+
+/* Background-color of the odd rows */
+.tabela tr:nth-child(odd) {
+  background-color: #0d0e26;
+}
+
+/* Background-color of the even rows */
+.tabela tr:nth-child(even) {
+  background-color: #0d0e26;
+}
+
+.tabela th {
+  background-color: #f2e8c5;
+}
+
+.tabela td:first-child {
+  color: #f2e8c5;
+}
+
+/* TELA LISTA
+TELA LISTA
+TELA LISTA */
+
+.racas{
+  width: 100%;
+  margin-bottom: 30px;
+  box-shadow: 0px 2px 94px 15px rgba(0, 0, 0, 0.54);
+  -webkit-box-shadow: 0px 2px 94px 15px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 0px 2px 94px 15px rgba(0, 0, 0, 0.54);
+}
+
+dl{
+  margin-top: 60px;
+  margin-bottom: 50px;
+  margin-left: 40px;
+  text-align: left;
+  font-family: "Cardo", serif;
+  color: #f2e8c5;
+}
+
+dt{
+  margin-left: 30px;
+  margin-bottom: 15px;
+  align-items: center;
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+dd{
+  margin-left: 60px;
+  margin-right: 60px;
+  align-items: center;
+  font-size: 27px;
+  margin-bottom: 50px;
+}
